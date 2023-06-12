@@ -22,48 +22,6 @@ Om konventioner for navngivning af tabeller og measures.
     - Description
     - Key
 
-
-### Calculated columns
-  - Undgå så vidt muligt datatransformation i Tabular Editor. Det giver bedre overblik at have samlet i SQL.
-    - (Flyt evt nedenstående til views og brug en mere robust metode til anonymisering:)
-      - v_DimAnsættelse[TjnrAnonymiseret]
-      - v_DimPerson[NavnAnonymiseret]   
-
-
-### Stored procedures
-  - Navngives kort og præcist beskrivende fx 'DanskeHelligdage'
-  - Brug så vidt muligt verber til at beskrive procedurens *funktion*
-  - camelCase
-
-- æ, ø, å tilladt
-
-
-### Measures
-- Navngives fx [Fravær - vægtede fuldtidsfraværsdage]. 
-- Skabelon: [tema - beskrivende og letforståelig tekst]
-  - (ikke nødvendigvis camelCase)
-- Measures grupperes i temaspecifikke mapper
-  - Enkelte basis-measures placeres i mappen _Diverse_, hvis de bruges på tværs af temaer. Fx [Antal fuldtidsansatte] og [FilterSlicer]
-- æ ø å tilladt
-- Ikke alle measures er navngivet efter denne konvention. Ved tvivl se mappen _Sygefravær_
-- Disse felter udfyldes i Tabular Editor, hvis ikke de er pre-udfyldt:
-  - Description
-<br>
-
-
-
-# Power BI
-
-## Generelt
-- Om brug af bookmarks. Navngivning, sektioner, grupperinger, lag mm. 
-  - Farvetema (brug af measures). Hvor?
-  - Conditional formatting
-  - Akser. Min/max-værdier vha measures. Hvor?
-  - Kolonnebredde=0
-  - Covers. Hvor og hvorfor?
-- Link til tabs. Ikke faner. (I lederdashboard). Begrund.
-
-
 ## Farvetema
 <!-- Embed iFrame. PowerPoint: "One pager - Design guidelines til rapporter i FLIS" på OneDrive-->
 {::options parse_block_html="true" /}
@@ -75,42 +33,38 @@ Om konventioner for navngivning af tabeller og measures.
 </details>
 {::options parse_block_html="false" /}
 
+# Brugerstyring
+
+<!-- Embed iFrame. pptx: ERD_Brugerstyring" på OneDrive-->
+<details><summary markdown="span">Datamodel</summary>
+<center>
+<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={643396fc-99fc-401a-ac2e-c6378e2a7317}&amp;action=embedview&amp;wdAr=1.7777777&showNavigation=FALSE&wdStart=18&wdEnd=21" height="474" width="800"  frameborder="0" seamless="TRUE"></iframe>
+</center>
+</details>  
+<br>
 
 
 
-#	Opgaver og ansvar
-
-**Aftaler for ændringer i CHRU_HRKube:**
-- Roller. Hvem gør/har ansvar for hvad?
-  - SQL, Dax, Git, dok
-  - Intervaller
- 
-
-**Kontrol-scripts:**
-- Til hvad? Afdæk behov
-
-
-**Oprydning:**
-- Hvordan implementerer vi vedtaget nomenklatur?
-- Prioriter. Hvad kan vi leve med?
-  - performance vs æstetik
-  - slette ubrugte tabeller/kolonner vs ændre æ ø å 
+<!-- Embed iFrame. word-doc: Brugerstyring.docx" på OneDrive-->
+<center>
+<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={0e624a26-13b0-4f1c-8729-b16bf20cb610}&amp;action=embedview&amp;wdEmbedCode=0&amp;wdPrint=0&wdToolbar=FALSE" height="1120" width="800" frameborder="0" seamless="yes"></iframe>
+</center>
+<br>
 
 
 
+<!-- ØVELSE -->
+{::options parse_block_html="true" /}
+<details><summary markdown="span">**ØVELSE - BRUGERSTYRING** <img src="Images/icons_ref/icon_git.png" height="35" width="35"></summary>
 
-# Gamle noter som gemmes til senere
-- Overvej hvor/hvad vi kan trække ift. versionsstyring/vedligeholdelse:
-- SSMS: 
-  - Database: view-definitioner, oversigt over tabeller og views, hvor de bruges osv.
-  - Kuben: billede af model og relationer – Nicolai viste dette
-- Tabular Editor
-  - Hvordan tabeller og measures bygger på hinanden – Nicolai viste Excel-dok
-- Power BI
-  - Hvor measures bruges, hvilke der ikke bruges osv. – Nicolai nævnte kort at dette (måske…) var en mulighed
+> - Hvem er din sektionsleder og hvilke(n) rolle(r) er denne tildelt i SD? 
+> - På hvilket organisatorisk niveau (NY-niveau) er disse gældende?
+> - Hvilke SD-rolle har du selv?
+> - Givet at du ikke er leder, hvorfor kan du se data i HR Lederdashboardet?
+> - Hvad skal vi ændre, hvis flere SD-grupper skal kunne anvende HR Lederdashboardet?
+>  
+> Se <a href="https://github.com/DataOgDigitalisering/FortroligInformation/blob/main/Exercises/ex_brugerstyring.sql" target="_blank">**løsningsforslag**</a>.
 
-
-
-- Vigtigt med afsnit om hvordan man bygger nye temaer op, så vi navngiver konsistent osv.
-- Vigtigt at have et sted hvor man beskriver hvordan man filtrerer på stilling og DimOrganisation (til folk som skal bygge nye dashboards f.eks.)
+</details>
+{::options parse_block_html="false" /}
 
