@@ -1,0 +1,248 @@
+<br>
+<div class="vertical-menu">
+  <a <a href="{{ '/' | relative_url }}">Forside[†]</a>
+</div>
+
+<button class="collapsible">HR Strategisk Dashboard</button>
+<div class="content">
+    <ul>
+        <li><a href="{{ '/HRStrategiskDashboard_personalesammensætning' | relative_url }}">Personalesammensætning[*]</a></li>
+        <li><a href="{{ '/HRStrategiskDashboard_sygefravær' | relative_url }}">Sygefravær[*]</a></li>
+        <li><a href="{{ '/HRStrategiskDashboard_trivsel' | relative_url }}">Trivsel[*]</a></li>
+        <li><a href="{{ '/HRStrategiskDashboard_rekruttering' | relative_url }}">Rekruttering[*]</a></li>
+        <li><a href="{{ '/HRStrategiskDashboard_onboarding' | relative_url }}">Onboarding[*]</a></li>
+        <li><a href="{{ '/HRStrategiskDashboard_fastholdelse' | relative_url }}">Fastholdelse[*]</a></li>
+        <li><a href="{{ '/HRStrategiskDashboard_exit-undersøgelse' | relative_url }}">Exit-undersøgelse[*]</a></li>
+    </ul>
+</div>
+<button class="collapsible">HR Lederdashboard</button>
+<div class="content">
+    <ul>
+        <li><a href="{{ '/lederdashboard_personalesammensætning' | relative_url }}">Personalesammensætning[†]</a></li>
+        <li><a href="{{ '/lederdashboard_sygefravær' | relative_url }}">Sygefravær[†]</a></li>
+        <li><a href="{{ '/lederdashboard_ferieafholdelse' | relative_url }}">Ferieafholdelse[†]</a></li>
+    </ul>
+</div>
+<button class="collapsible">CHRU_HRKube</button>
+<div class="content">
+    <ul>
+        <li><a href="{{ '/kube_introTilKuben' | relative_url }}">Intro til kuben[†]</a></li>
+        <li><a href="{{ '/kube_brugerstyring' | relative_url }}">Brugerstyring[†]</a></li> 
+        <li><a href="{{ '/kube_grunddata' | relative_url }}">Grunddata[†]</a></li> 
+        <li><a href="{{ '/kube_HRDashboard' | relative_url }}">HR Dashboard[*]</a></li>
+        <li><a href="{{ '/kube_personalesammensætning' | relative_url }}">Personalesammensætning[†]</a></li>
+        <li><a href="{{ '/kube_sygefravær' | relative_url }}">Sygefravær[†]</a></li>
+        <li><a href="{{ '/kube_trivsel' | relative_url }}">Trivsel[*]</a></li>
+        <li><a href="{{ '/kube_rekruttering' | relative_url }}">Rekruttering[*]</a></li>
+        <li><a href="{{ '/kube_onboarding' | relative_url }}">Onboarding[*]</a></li>
+        <li><a href="{{ '/kube_fastholdelse' | relative_url }}">Fastholdelse[*]</a></li>
+        <li><a href="{{ '/kube_exitsurvey' | relative_url }}">ExitSurvey[†]</a></li>        
+        <li><a href="{{ '/kube_ferie' | relative_url }}">Ferie[†]</a></li>
+        <li><a href="{{ '/kube_løn' | relative_url }}">Løn[*]</a></li>
+        <li><a href="{{ '/kube_vagtplan' | relative_url }}">Vagtplan[*]</a></li>
+        <li><a href="{{ '/kube_opdatering' | relative_url }}">Opdatering og validering[†]</a></li>
+    </ul>
+</div>
+<button class="collapsible">Views</button>
+<div class="content">
+    <ul>
+        <li><a href="{{ '/views_intro' | relative_url }}">Intro til views[*]</a></li>
+        <li><a href="{{ '/views_produktion' | relative_url }}">Views i Produktion[*]</a></li>
+        <li><a href="{{ '/views_opdatering' | relative_url }}">Opdatering og validering[*]</a></li>
+    </ul>
+</div>
+<button class="collapsible">Tabeller og databaser</button>
+<div class="content">
+    <ul>
+        <li><a href="{{ '/tabellerOgDatabaser_intro' | relative_url }}">Intro til tabeller[*]</a></li>
+        <li><a href="{{ '/tabellerOgDatabaser_produktion' | relative_url }}">Tabeller i Produktion[*]</a></li>
+        <li><a href="{{ '/tabellerOgDatabaser_opdatering' | relative_url }}">Opdatering og validering[*]</a></li>
+    </ul>
+</div>
+
+<div class="vertical-menu">
+<a <a href="{{ '/ordforklaring' | relative_url }}">Ordforklaring[†]</a>
+</div>
+
+<button class="collapsible">Internt</button>
+<div class="content">
+    <ul>
+        <li><a href="{{ '/internt_GitHub' | relative_url }}">GitHub - Guide[†]</a></li>
+        <li><a href="{{ '/internt_hjemmeside' | relative_url }}">Hjemmeside - Guide[†]</a></li>
+        <li><a href="{{ '/internt_dokumentering' | relative_url }}">Dokumentering - Guide[†]</a></li>    
+        <li><a href="{{ '/internt_versionsstyring' | relative_url }}">Versionsstyring - Guide[*]</a></li>
+        <li><a href="{{ '/internt_dashboard' | relative_url }}">Dashboard - Guide[*]</a></li>
+        <li><a href="{{ '/internt_kube' | relative_url }}">Kube - Guide[*]</a></li>
+        <li><a href="{{ '/internt_views' | relative_url }}">Views - Guide[*]</a></li>
+        <li><a href="{{ '/internt_tabellerOgDatabaser' | relative_url }}">Tabeller og databaser - Guide[*]</a></li>
+        <li><a href="{{ '/internt_postkassen' | relative_url }}">Postkassen - Guide[†]</a></li>
+        <li><a href="{{ '/internt_øvrige' | relative_url }}">Øvrige[†]</a></li>
+
+    </ul>  
+</div>
+<p>
+<small>
+[*] Ikke påbegyndt, 
+[†] Udarbejdes, 
+[§] Valideres
+<br>
+</small>
+<br>
+
+<b id="demo"></b>
+<script>
+let side;
+switch (window.location.pathname) {
+  case "{{ '/' | relative_url }}":
+    side = "Forside";
+    break;  
+  case "{{ '/HRStrategiskDashboard_personalesammensætning' | relative_url }}":
+    side = "Personalesammensætning";
+    break;
+ case "{{ '/HRStrategiskDashboard_sygefravær' | relative_url }}":
+    side = "Sygefravær";
+    break;  
+ case "{{ '/HRStrategiskDashboard_trivsel' | relative_url }}":
+    side = "Trivsel";
+    break;  
+ case "{{ '/HRStrategiskDashboard_rekruttering' | relative_url }}":
+    side = "Rekruttering";
+    break;  
+ case "{{ '/HRStrategiskDashboard_onboarding' | relative_url }}":
+    side = "Onboarding";
+    break;  
+ case "{{ '/HRStrategiskDashboard_fastholdelse' | relative_url }}":
+    side = "Fastholdelse";
+    break;  
+ case "{{ '/HRStrategiskDashboard_exit-undersøgelse' | relative_url }}":
+    side = "Exit-undersøgelse";
+    break;  
+ case "{{ '/lederdashboard_personalesammensætning' | relative_url }}":
+    side = "Personalesammensætning";
+    break;  
+ case "{{ '/lederdashboard_sygefravær' | relative_url }}":
+    side = "Sygefravær";
+    break;  
+ case "{{ '/lederdashboard_ferieafholdelse' | relative_url }}":
+    side = "Ferieafholdelse";
+    break;  
+ case "{{ '/kube_introTilKuben' | relative_url }}":
+    side = "Intro til kuben";
+    break;  
+ case "{{ '/kube_brugerstyring' | relative_url }}":
+    side = "Brugerstyring";
+    break;  
+ case "{{ '/kube_grunddata' | relative_url }}":
+    side = "Grunddata";
+    break;  
+ case "{{ '/kube_HRDashboard' | relative_url }}":
+    side = "HR Dashboard";
+    break;  
+ case "{{ '/kube_personalesammensætning' | relative_url }}":
+    side = "Personalesammensætning";
+    break;  
+ case "{{ '/kube_sygefravær' | relative_url }}":
+    side = "Sygefravær";
+    break;  
+ case "{{ '/kube_trivsel' | relative_url }}":
+    side = "Trivsel";
+    break;  
+ case "{{ '/kube_rekruttering' | relative_url }}":
+    side = "Rekruttering";
+    break;  
+ case "{{ '/kube_onboarding' | relative_url }}":
+    side = "Onboarding";
+    break;  
+ case "{{ '/kube_fastholdelse' | relative_url }}":
+    side = "Fastholdelse";
+    break; 
+ case "{{ '/kube_exitsurvey' | relative_url }}":
+    side = "ExitSurvey";
+    break; 
+ case "{{ '/kube_ferie' | relative_url }}":
+    side = "Ferie";
+    break; 
+ case "{{ '/kube_løn' | relative_url }}":
+    side = "Løn";
+    break; 
+ case "{{ '/kube_vagtplan' | relative_url }}":
+    side = "Vagtplan";
+    break; 
+ case "{{ '/kube_opdatering' | relative_url }}":
+    side = "Opdatering og validering";
+    break; 
+ case "{{ '/views_intro' | relative_url }}":
+    side = "Intro til views";
+    break; 
+ case "{{ '/views_produktion' | relative_url }}":
+    side = "Views i Produktion";
+    break; 
+ case "{{ '/views_opdatering' | relative_url }}":
+    side = "Opdatering og validering";
+    break; 
+ case "{{ '/tabellerOgDatabaser_intro' | relative_url }}":
+    side = "Intro til tabeller";
+    break; 
+ case "{{ '/tabellerOgDatabaser_produktion' | relative_url }}":
+    side = "Tabeller i Produktion";
+    break; 
+ case "{{ '/tabellerOgDatabaser_opdatering' | relative_url }}":
+    side = "Opdatering og validering";
+    break; 
+ case "{{ '/ordforklaring' | relative_url }}":
+    side = "Ordforklaring";
+    break; 
+ case "{{ '/internt_GitHub' | relative_url }}":
+    side = "GitHub - Guide";
+    break; 
+ case "{{ '/internt_hjemmeside' | relative_url }}":
+    side = "Hjemmeside - Guide";
+    break; 
+ case "{{ '/internt_dokumentering' | relative_url }}":
+    side = "Dokumentering - Guide";
+    break; 
+ case "{{ '/internt_versionsstyring' | relative_url }}":
+    side = "Versionsstyring - Guide";
+    break; 
+ case "{{ '/internt_dashboard' | relative_url }}":
+    side = "Dashboard - Guide";
+    break; 
+ case "{{ '/internt_kube' | relative_url }}":
+    side = "Kube - Guide";
+    break; 
+ case "{{ '/internt_views' | relative_url }}":
+    side = "Views - Guide";
+    break; 
+ case "{{ '/internt_tabellerOgDatabaser' | relative_url }}":
+    side = "Tabeller og databaser - Guide";
+    break; 
+ case "{{ '/internt_postkassen' | relative_url }}":
+    side = "Postkassen - Guide";
+    break; 
+ case "{{ '/internt_øvrige' | relative_url }}":
+    side = "Øvrige";
+    break; 
+  default:
+    side = "Side";
+}
+document.getElementById("demo").innerHTML = side + " - indhold";
+</script>
+<p id="hBar" > </p>
+<!-- Script to make sure the collapsible unfolds with an animation -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px" ;
+    } 
+  });
+}
+</script>
+
