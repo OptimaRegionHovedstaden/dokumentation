@@ -1,17 +1,5 @@
 # CHRU | Optima - dette skrives i README.md-filen
-
-Vi er en sektion under enheden **Data og Digitalisering** i **Center for HR og Uddannelse (CHRU)**. Sektionen udstiller data og leverer ledelsesinformation til regionens personaleledere og topledelser i form af Power BI Dashboards. Tilmed understøtter sektionen andre dele af CHRU med dataanvendelse (intern styring, indsigter, erkendelser, mv.). Sektionen varetager også *postkassehenvendelser* internt fra hele regionen og fra eksterne parter (spørgsmål og aktindsigter fra politikere, og journalister). 
-Sektionen har hovedsageligt tekniske medarbejdere med kompetencer i dataudtræk og datafremstilling og økonomimedarbejdere, samt ledelsesmedarbejdere til at understøtte disse.
-<br>
-
-<!-- PowerPoint: "Introduktion og onboarding til D&R"  -->
-<center>
-<iframe src="https://regionh-my.sharepoint.com/personal/stefan_sajin-henningsen_regionh_dk/_layouts/15/Doc.aspx?sourcedoc={9400f055-6ddb-4862-aaa8-e3b2389a9bad}&amp;action=embedview&amp;wdAr=1.7777777777777777" height="587" width="1000" frameborder="0"></iframe>
-</center>
-<br>
-
-
-
+ALT DETTE SKAL ÆNDRES
 # Introduktion til CHRU_HRKube
 
 ## ***Kuben***
